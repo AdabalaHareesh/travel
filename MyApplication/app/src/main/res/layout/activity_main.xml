@@ -1,0 +1,666 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffc916"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+
+                        <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="Travel Request Approval"  android:layout_span="3"
+                                android:padding="18dip" android:background="#b0b0b0" android:gravity="center"
+                                android:textColor="#000"/>
+
+
+                        </TableRow>
+
+                        <!-- Row 2 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp Name: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp ID: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Project Name: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination City: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Travel: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+
+
+                        <!-- Row 4 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Return: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Type of Travel: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Category: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+
+                        <!-- Row 5 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Travel Advance: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Req Travel Advance: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Raised By: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+                            <TextView android:id="@+id/textItem" android:text="Comments:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Approve"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Reject"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#da8200"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+
+                        <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="Travel Options Approval"  android:layout_span="3"
+                                android:padding="18dip" android:background="#b0b0b0" android:gravity="center"
+                                android:textColor="#000"/>
+
+
+                        </TableRow>
+
+                        <!-- Row 2 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp Name: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp ID: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Project Name: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination City: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Travel: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 3 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Return: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+                            <TextView android:id="@+id/textItem" android:text="Travel Option1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                            </EditText>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select"
+                                android:id="@+id/radioButton" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+                            <TextView android:id="@+id/textItem" android:text="Travel Option2:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                            </EditText>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select"
+                                android:id="@+id/radioButton2" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+                            <TextView android:id="@+id/textItem" android:text="Travel Option3:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                            </EditText>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select"
+                                android:id="@+id/radioButton3" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+                            <TextView android:id="@+id/textItem" android:text="Comments:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Update"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Resend"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5b89ff"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+
+                        <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="Travel Advance Approval"  android:layout_span="3"
+                                android:padding="18dip" android:background="#b0b0b0" android:gravity="center"
+                                android:textColor="#000"/>
+
+
+                        </TableRow>
+
+                        <!-- Row 2 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp Name: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Emp ID: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Project Name: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination City: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Travel: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+
+
+                        <!-- Row 4 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Return: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="EMP Level: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Visa Fee: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+
+                        <!-- Row 5 with 3 columns -->
+
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Transit Fee: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Travel Adv Payable: View"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Requested Amount: View"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Currency: View"
+                                android:layout_weight="1" android:background="#dcdcdc"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity=""/>
+                        </TableRow>
+
+                        <!-- Row 5 with 3 columns -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+                            <TextView android:id="@+id/textItem" android:text="Approved Amount:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+
+                            <TextView android:id="@+id/textItem" android:text="Comments:"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Approve"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Reject"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
