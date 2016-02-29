@@ -1,0 +1,549 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffc916"
+                    android:orientation="vertical">
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+                        <!-- Row 1 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Employee Name"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Travel"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 2 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 5 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Approve"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Reject"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#da8200"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+                        <!-- Row 1 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Employee Name"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Date of Travel"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 2 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 5 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Approve"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Reject"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5b89ff"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+                        <!-- Row 1 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="T.RefNo"
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Employee Name"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Destination"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text="Requested Amount"
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 2 with 5 columns -->
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <!-- Row 3 with 5 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox" android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#cac9c9"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#d3d3d3"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/TextView04" android:text=""
+                                android:layout_weight="1" android:background="#cac9c9"
+                                android:textColor="#000000"
+                                android:padding="20dip" android:gravity="center"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Approve"
+                                android:id="@+id/button"
+                                android:layout_column="2" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Reject"
+                                android:id="@+id/button2"
+                                android:layout_column="4" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
